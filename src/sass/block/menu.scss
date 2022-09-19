@@ -2,13 +2,14 @@
     ul {
         display: flex;
         justify-content: space-between;
-        font-weight: wrap;
+        flex-wrap: wrap;
         li {
            margin: 0 5px;
            a{
             color: $white-gray;
             text-decoration: none;
             font-size: 14px;
+            font-weight: 600;
             line-height: 16px;
             text-transform: uppercase;
             padding-bottom: 17px;
@@ -22,6 +23,36 @@
                 border-bottom-color: $red;
             }
            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+
+        ul {
+            li {
+                margin: 5px;
+                a {
+                    padding-bottom: 0;
+                    border-bottom: none;
+        
+                    &:hover {
+                        border-bottom: none;
+                    }
+                }
+            }
+    
+            
+        }
+       
+    }
+}
+
+@media (max-width: 560px) {
+    .menu {
+        ul {
+            justify-content: center;
         }
     }
 }
