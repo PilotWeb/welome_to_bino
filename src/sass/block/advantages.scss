@@ -1,0 +1,112 @@
+.advantages {
+    border-bottom: 1px solid $advantages-line;
+    padding-bottom: 60px;
+    margin-bottom: 140px;
+
+    .advantages__block {
+        display: flex;
+        justify-content: space-between ;
+        flex-wrap: wrap;
+    }
+    .advantages__element {
+        flex-basis: 23.5%;
+        margin: 20px 0;
+        text-align: center;
+
+        p {
+            font-family: "Source San Pro", sans-serif;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.9px;
+            margin: 15px 0;
+            color: $advantages-gray;
+
+        }
+
+        &:hover {
+            .advantages__icon {
+                transform: rotate(45deg);
+                border-color: $red;
+                img {
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                }
+            }
+            .advantages__title {
+                color: $red;
+            }
+            
+        }
+
+        .advantages__title {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $gray;
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 1.35px;
+            transition-duration: 500ms;
+            transition-property: color;
+
+            &::after {
+                content: '';
+                width: 41px;
+                height: 1px;
+                background-color: #888888;
+                border-bottom: 1px solid #e1e1e1;
+                display: block;
+                margin: 15px auto;
+            }
+        }
+
+
+    }
+
+    .advantages__icon {
+        width: 73px;
+        height: 73px;
+        border: 1px solid $advantages-border-gray;
+        position: relative;
+        margin: 20px auto;
+        transition-duration: 500ms;
+        transition-property: border-color, transform;
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition-duration: 500ms;
+            transition-property: transform;
+            
+        }
+
+        
+    }
+
+
+}
+
+@media (max-width:980px) {
+    .advantages {
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+    
+}
+@media (max-width:768px) {
+    .advantages {
+        .advantages__element {
+            flex-basis: 49%;
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .advantages {
+        .advantages__element {
+            flex-basis: 100%;
+        }
+    }
+}
