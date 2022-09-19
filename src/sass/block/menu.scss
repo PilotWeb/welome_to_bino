@@ -1,0 +1,27 @@
+.menu {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        font-weight: wrap;
+        li {
+           margin: 0 5px;
+           a{
+            color: $white-gray;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: uppercase;
+            padding-bottom: 17px;
+            border-bottom: 1px solid transparent;
+            transition-duration: 300ms;
+            transition-property: color, border-bottom-color;
+
+            
+            &:hover {
+                color: $red;
+                border-bottom-color: $red;
+            }
+           }
+        }
+    }
+}
