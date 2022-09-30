@@ -1,0 +1,53 @@
+.socials {
+    display: flex;
+    align-items: center;
+
+    li {
+
+        margin-right: 20px ;
+
+        a {
+            display: block;
+            width: 25px;
+            height: 20px;
+            background-position: cover;
+        }
+    }
+
+    .facebook {
+        background: url('../img/social.png') center center no-repeat;
+        &:hover {
+            background: url('../img/facebook2.png') center center no-repeat;
+        }        
+    }
+    .twitter{
+        background: url('../img/twitter.png') center center no-repeat;
+        &:hover {
+            background: url('../img/social2.png') center center no-repeat;
+        }        
+    }
+    .rss{
+        background: url('../img/social3.png') center center no-repeat;
+        &:hover {
+            background: url('../img/rss.png') center center no-repeat;
+        }        
+    }
+    .google{
+        background: url('../img/social4.png') center center no-repeat;
+        &:hover {
+            background: url('../img/google-plus.png') center center no-repeat;
+        }        
+    }
+    .linkedin{
+        background: url('../img/social5.png') center center no-repeat;
+        &:hover {
+            background: url('../img/linkedin.png') center center no-repeat;
+        }        
+    }
+    .t{
+        background: url('../img/social8.png') center center no-repeat;
+        &:hover {
+            background: url('../img/tumblr.png') center center no-repeat;
+        }
+    }
+}
